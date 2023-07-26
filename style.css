@@ -1,0 +1,390 @@
+@font-face {
+    font-family: 'Avenir Black';
+    src: url("fonts/Avenir Black/Avenir Black.ttf")format("truetype");
+}
+@font-face {
+    font-family: "Proxina";
+    src: url("fonts/Proxima Nova Black.ttf")format("truetype");
+}
+@font-face {
+    font-family: "ProxinaLight";
+    src: url("fonts/Proxima Nova Light.ttf")format("truetype");
+}
+@font-face {
+    font-family: "ProxinaBold";
+    src: url("fonts/Proxima-Nova-Bold.otf")format("truetype");
+}
+@font-face {
+    font-family: "Regular";
+    src: url("fonts/3133-font.ttf")format("truetype");
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.section1, .section2, .section3, .section4, .section5, .section6{
+    width: 1280px;
+    height: 740px;
+    background-color:#0c0c0c;
+    margin: 30px auto;
+    margin-top: 0px;
+}
+.bbb{
+    width: 1280px;
+    height: 740px;
+    margin-top: 0px;
+    border:2px white solid;
+    position: absolute;
+    margin-left: 70px;
+    overflow: hidden;
+}
+.logo{
+    width: 35px;
+    height: 30px;
+    margin-left: 55px;
+    margin-top: 18px;
+}
+.nav__brand{
+    font-family:'Avenir Black';
+    font-size: 16pt;
+    color:white;
+    margin-left: 100px;
+    margin-top: -33px;
+}
+.nav__Menu{
+    height: 570px;
+    border-left:2px solid #1f1f1f;
+    margin-left: 55px;
+    margin-top: 40px;
+    position: absolute;
+}
+.nuqta{
+    width: 4px;
+    height: 4px;
+    border-radius:2px;
+    background-color:#ffffff;
+    margin-top: 28px;
+    margin-left:-2px;
+}
+.nuqta2 {
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #636363;
+    margin-top: 28px;
+    margin-left: -2px;
+}
+.nuqta1 {
+    width: 5px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #0f33ff;
+    margin-top: 28px;
+    margin-left:-3px;
+}
+.Menu__num{
+    color:white;
+    font-family: "ProxinaLight";
+    position: absolute;
+    font-size: 16pt;
+    margin-top: -10px;
+    margin-left: -30px;
+}
+.Menu__num2 {
+    color: #555555;
+    font-family: "ProxinaLight";
+    position: absolute;
+    font-size: 16pt;
+    cursor:pointer;
+    margin-top: -15px;
+    margin-left: 10px;
+}
+.Menu__home {
+    color: white;
+    font-family: "ProxinaLight";
+    position: absolute;
+    font-size: 16pt;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.nav__You{
+    font-family: "Proxina";
+    font-size: 60pt;
+    color:white;
+    margin-top: -515px;
+    margin-left: 200px;
+    line-height: 78px;
+}
+.human{
+    margin-left: 555px;
+    margin-top: -360px;
+    width: 46%;
+}
+.nav__button{
+    width: 90px;
+    height: 32px;
+    background-color:#0f33ff;
+    margin-left: 210px;
+    margin-top: 40px;
+}
+.tr{
+    margin-left: 8px;
+    margin-top: 8px;
+}
+.nav__link{
+    font-size: 14pt;
+    font-family: "ProxinaBold";
+    color:white;
+    text-decoration: none;
+    margin-left: -12px;
+}
+.card > .title{
+    font-size: 18pt;
+    font-family: "ProxinaBold";
+    color:white;
+    margin-left: 205px;
+    margin-top: 30px;
+}
+.line2{
+    width: 845px;
+    margin-left: -20px;
+    margin-top: 88px;
+    border-bottom: 2px solid #181818;
+}
+.blue{
+    width: 30px;
+    height: 5px;
+    background-color:#1336ff;
+    margin-left: -5px;
+}
+.card > .matn{
+    font-size: 13pt;
+    font-family: "Regular";
+    color:white;
+    margin-left: 205px;
+    margin-top: 20px;
+}
+.row{
+    display: flex;
+}
+.card2>.matn {
+    font-size: 13pt;
+    font-family: "Regular";
+    color: #252525;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+.card2>.title {
+    font-size: 18pt;
+    font-family: "ProxinaBold";
+    color: #252525;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+.card3 >.matn {
+    font-size: 13pt;
+    font-family: "Regular";
+    color: #252525;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+
+.card3 >.title {
+    font-size: 18pt;
+    font-family: "ProxinaBold";
+    color: #252525;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+.menyu{
+    margin-left: 1170px;
+    margin-top: -600px; 
+    position: absolute;
+}
+.nav__but{
+    width: 93px;
+    height: 34px;
+    background-color:#0f33ff;
+    margin-left: 565px;
+    margin-top: -615px;
+}
+.but__link{
+    font-size: 14pt;
+    font-family: "ProxinaBold";
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-top: 10px;
+    position: absolute;
+}
+.section2 .nav__title{
+    font-size: 30pt;
+    font-family: "ProxinaBold";
+    color: white;
+    margin-left: 480px;
+    margin-top: 65px;
+}
+.section2 .back{
+    margin-left: 100px;
+    margin-top: 185px;
+}
+.section2 .img1{
+    margin-left: 45px;
+    margin-top: 120px;
+    position: absolute;
+}
+.section2 .img__name{
+    font-size: 12pt;
+    font-family: "ProxinaBold";
+    color: #868686;
+    margin-left: 240px;
+    margin-top: 60px;
+}
+.section2 .img2 {
+    margin-left: 445px;
+    margin-top: -260px;
+    position: absolute;
+}
+.section2 .img__name2{
+    font-size: 18pt;
+    font-family: "ProxinaBold";
+    color: white;
+    margin-left: 515px;
+    margin-top: 90px;
+}
+.section2 .lorem{
+    font-size: 16pt;
+    color:white;
+    font-family: "Regular";
+    margin-left: 440px;
+    margin-top: 10px;
+}
+.section2 .img3{
+    margin-left: 850px;
+    margin-top: -370px;
+    position: absolute;
+}
+.section2 .right{
+    margin-left: 1060px;
+    margin-top: -310px;
+    position: absolute;
+}
+.section3 .matn{
+    font-size: 56pt;
+    font-family: "Proxina";
+    color:white;
+    margin-left: 195px;
+    margin-top: 50px;
+}
+.section3 .err{
+    margin-left: 155px;
+    margin-top: 25px;
+    display: flex;
+}
+.section3 .blok__rasm{
+    margin-left: 13px;
+    width: 180px;
+}
+.section3 .rasm__name{
+    color:white;
+    font-size: 14pt;
+    font-family: "ProxinaBold";
+    margin-left: 25px;
+    margin-top: -11px;
+}
+.human2{
+    margin-left: -100px;
+    margin-top: -500px;
+}
+.pin{
+    margin-left: -770px;
+    margin-top: 330px;
+    position: absolute;
+    z-index: 3;
+}
+.section4 .card{
+    width: 240px;
+    height: 300px;
+    background-color:#0b0b0b;
+    margin-left: 690px;
+    margin-top: -540px;
+    position: absolute;
+    z-index: 3;
+    border: 2px solid bisque;
+}
+.tugma{
+    width: 120px;
+    height: 30px;
+    background-color: #1769ff;
+    margin-left: 62px;
+    margin-top: 20px;
+}
+.tugma__link{
+    text-decoration: none;
+    color:white;
+    font-size: 21px;
+    margin-left: 25px;
+    margin-top: 3px;
+    position: absolute;
+}
+.section5 .header__title{
+    font-size: 28pt;
+        font-family: "Proxina";
+        color: white;
+        margin-left: 460px;
+        margin-top: 50px;
+}
+.section5 .button{
+    width: 220px;
+    height: 50px;
+    margin-left: 40px;
+    border:2px solid white;
+}
+.section5 .row__buttons{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.button .button__link{
+    text-decoration: none;
+    color:white;
+    font-family: "ProxinaBold";
+    font-size: 18pt;
+    margin-left: 30px;
+    margin-top: 15px;
+    position: absolute;
+}
+.section5 .button:hover{
+    background-color:#0f33ff;
+    cursor: pointer;
+}
+.section5 .input{
+    width: 315px;
+    height: 60px;
+    border:none;
+    border-bottom:2px solid white;
+    background-color:#0c0c0c;
+    margin-left: 105px;
+}
+.section5 .row__input{
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.section5 .send{
+    width: 400px;
+    height: 55px;
+    background-color:#0f33ff;
+    cursor:pointer;
+    margin-left: 420px;
+    margin-top: 50px;
+}
+.section5 .send__link{
+    text-decoration: none;
+        color: white;
+        font-family: "ProxinaBold";
+        font-size: 18pt;
+        margin-left: 110px;
+        display:block;
+        margin-top: 15px;
+        position: absolute;
+}

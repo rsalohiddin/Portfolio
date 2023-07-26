@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 280px;
+            height: 200px;
+            /* position: absolute; */
+            margin-left: 100px;  
+            cursor: pointer;
+        }
+        .img{
+            margin-left: 5px;
+        }
+        .container{
+            width: 250px;
+            height: 200px;
+            border: 3px solid red;
+            overflow: hidden;
+            margin: 350px 500px;
+        }
+        .block{
+            display: flex;
+            transition: all .5s;
+        }
+        .row{
+            display: flex;
+            margin-left: 400px;
+            margin-top: -300px;
+        }
+        .left, .right{
+            font-size: 60px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .row > img{
+            width: 240px;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block" id="blok">
+        <img src="img/rasm.png" alt="" class="img" id="img" style="width: 240px;">
+        <img src="img/uy2.png" alt="" id="img2">
+        <img src="img/uy.png" alt="" id="img3" >
+    </div>
+    </div>
+    <div class="row">
+        <div class="left"><</div>
+            <img src="img/rasm.png" alt="" class="image" id="rasm"  style=" margin-left: 30px;">
+            <img src="img/uy2.png" alt="" class="image" id="rasm2" style=" margin-left: 30px;">
+            <img src="img/uy.png" alt="" class="image" id="rasm3" style=" margin-left: 30px;">
+        <div class="right">></div>
+    </div>
+    <script>
+        let h = 0
+        let g = document.querySelectorAll("#blok img")
+        let k = document.querySelectorAll(".row .image")
+        let rasm = document.querySelector('#rasm')
+        let rasm2 = document.querySelector('#rasm2')
+        let rasm3 = document.querySelector('#rasm3')
+        rasm.onclick=function(event){
+            h=0
+            let img = document.querySelector("#blok") 
+            img.style.marginLeft = h * -320 + "px"
+            if (h > g.length - 1) {
+                h = 0
+            }
+            else if(h<0){
+                h = g.length -1
+            }
+        }
+        rasm2.onclick = function (event) {
+                h = 1
+                let img = document.querySelector("#blok")
+                img.style.marginLeft = h * -320 + "px"
+                if (h > g.length - 1) {
+                    h = 0
+                }
+                else if (h < 0) {
+                    h = g.length - 1
+                }
+            }
+            rasm3.onclick = function (event) {
+                    h = 2
+                    let img = document.querySelector("#blok")
+                    img.style.marginLeft = h * -320 + "px"
+                    if (h > g.length - 1) {
+                        h = 0
+                    }
+                    else if (h < 0) {
+                        h = g.length - 1
+                    }
+                }
+        function a (b){
+            h=b 
+            let img = document.querySelector("#blok")            
+            if(h>g.length-1){
+                h = 0
+            }
+            else if(h<0){
+                h = g.length -1
+            }
+            img.style.marginLeft=h*-320+"px"    
+        }
+        let ongga = document.querySelector(".right")
+        let chapga = document.querySelector(".left")
+        ongga.addEventListener('click',()=>{
+            let img = document.querySelector("#blok")
+            h++
+            a(h)
+        })
+        chapga.addEventListener('click',()=>{
+            let img = document.querySelector("#blok")
+            h--
+            a(h)
+        })
+    </script>
+</body>
+</html>

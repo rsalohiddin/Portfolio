@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class color {
+            ism = 'Salohiddin'
+            fam = 'Rahmatov'
+            Yosh = '15'
+            yil = 2008
+            Stipendiya = 200000
+            setIsm(a) {
+                this.ism = a
+            }
+            getIsm() {
+                console.log(this.ism)
+            }
+            setFam(b) {
+                this.fam = b
+                return console.log(this.fam)
+            }
+            setAge(c) {
+                this.Yosh = c
+            }
+            getAge() {
+                console.log(this.Yosh);
+            }
+            setYil() {
+                this.yil = 2023 - this.Yosh
+            }
+            getYil(){
+                console.log(this.yil)
+            }
+            setStipendiya(v) {
+                this.Stipendiya = this.Stipendiya * v
+                return console.log(this.Stipendiya)
+            }
+        }
+        const a = new color()
+        a.setIsm('Sanjar')
+        a.getIsm()
+        a.setFam('Asrorov')
+        a.setAge('24')
+        a.getAge()
+        a.setYil()
+        a.getYil()
+        a.setStipendiya(5)
+    </script>
+</body>
+
+</html>
